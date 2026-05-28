@@ -1,17 +1,19 @@
 from addSupermarket import addSupermarket
+from addColumn import addColumn
 
 while(True):
     print("Choose an option")
-    print("s = add supermarket, q = quit")
-    answer = input()
-    if answer == "s":
+    print("s = add supermarket, a = add attribute, q = quit")
+    answerMain = input()
+    if answerMain == "s":
         addSupermarket()
-    elif answer == "q":
+    if answerMain == "a":
+        addColumn()
+    elif answerMain == "q":
         break
-    else:
-        print("Invalid entry")
+
     print("Do you want to do something else? y = yes, n = no")
-    answer = input()
-    if answer == "n":
+    answerMain = input()
+    if answerMain == "n":
         break
 print("Bye, bye - and have fun!")

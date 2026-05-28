@@ -31,7 +31,7 @@ def addSupermarket():
             data.loc[len(data)] = new_supermarket
 
             # Save to csv
-            data.to_csv("../data/supermarkets.csv", index=False)
+            data.to_csv("data/supermarkets.csv", index=False)
             print("Saved!")
         except ValueError:
             if columns == []:
