@@ -1,9 +1,10 @@
 import pandas as pd
 
-def getData():
+def getData(tableName):
+    filePath = "data/" + tableName + ".csv"
     try:
-        dataSupermarkets = pd.read_csv("data/supermarkets.csv")
+        data = pd.read_csv(filePath)
     except:
-        print("Did not find supermarkets.csv, returning empty dataframe")
-        dataSupermarkets = pd.DataFrame()
-    return dataSupermarkets
+        print("Did not find " + tableName + ".csv, returning empty dataframe")
+        data = pd.DataFrame()
+    return data

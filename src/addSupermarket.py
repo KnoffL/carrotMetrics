@@ -2,7 +2,7 @@ from getData import getData
 
 def addSupermarket():
     # Get current data from supermarkets.csv
-    data = getData()
+    data = getData("supermarkets")
 
     # Get column names as list
     columns = data.columns.values.tolist()
