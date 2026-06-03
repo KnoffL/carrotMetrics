@@ -4,7 +4,7 @@ from addPurchase import addPurchase
 
 while(True):
     print("Choose an option")
-    print("s = add supermarket, a = add attribute, p = add purchase, q = quit")
+    print("s = add supermarket, a = add attribute, p = add purchase, c = add carrot brand, q = quit")
     answerMain = input()
     if answerMain == "s":
         addSupermarket()
@@ -12,6 +12,8 @@ while(True):
         addColumn()
     elif answerMain == "p":
         addPurchase()
+    elif answerMain == "c":
+        addCarrotBrand()
     elif answerMain == "q":
         break
     else:
