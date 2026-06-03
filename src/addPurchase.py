@@ -1,3 +1,5 @@
+from getData import getData
+
 def addPurchase():
     data = getData("purchases")
 
