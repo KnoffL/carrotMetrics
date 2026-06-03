@@ -1,10 +1,12 @@
 from addSupermarket import addSupermarket
 from addColumn import addColumn
 from addPurchase import addPurchase
+from addCarrotBrand import addCarrotBrand
+from changeRating import changeRating
 
 while(True):
     print("Choose an option")
-    print("s = add supermarket, a = add attribute, p = add purchase, c = add carrot brand, q = quit")
+    print("s = add supermarket, a = add attribute, p = add purchase, c = add carrot brand, r = change rating, q = quit")
     answerMain = input()
     if answerMain == "s":
         addSupermarket()
@@ -14,6 +16,8 @@ while(True):
         addPurchase()
     elif answerMain == "c":
         addCarrotBrand()
+    elif answerMain == "r":
+        changeRating()
     elif answerMain == "q":
         break
     else:
